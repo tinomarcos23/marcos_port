@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="images/png" sizes="32x32" href="images/logo_mnm.png">
+
+    <link rel="stylesheet" href="css/style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+
+        <header class="navbar">
+            <div class="logo">
+                <img src="images/logo_mnm.png" alt="logo">
+            </div>
+
+            <nav class="nav-links">
+                <a class="link" href="index.html">Home</a>
+                <a class="link" href="about.html">About</a>
+                <a class="link" href="works.html">Works</a>
+                <a class="link" href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main class="contact-section">
+
+        <div class="contact-top">
+            <h1>Contact Me</h1>
+            <p>Tell me about your next project.</p>
+
+            <button class="email-btn" onclick="copyEmail()">
+                <span id="btn-text">tinomarcos23@email.com</span>
+               
+            </button>
+        </div>
+
+<div class="contact-grid">
+    <div class="contact-col">
+        <h3>Email</h3>
+        <p><a href="mailto:tinomarcos23@gmail.com">tinomarcos23@gmail.com</a></p>
+        <h3>Location</h3>
+        <p>Philippines</p>
+    </div>
+
+    <div class="contact-col">
+        <h3>Social Media</h3>
+        <a href="https://github.com/tinomarcos23" target="_blank">GitHub <span>↗</span></a>
+        <a href="https://www.facebook.com/martin.marcos.5811" target="_blank">Facebook <span>↗</span></a>
+        <a href="https://www.instagram.com/getliketin?igsh=MThrN2pxenU1ZWlycg==" target="_blank">Instagram <span>↗</span></a>
+    </div>
+
+    <div class="contact-col">
+        <h3>Write Me & We'll Talk</h3>
+        <a href="https://www.messenger.com/e2ee/t/29304419395872188/" target="_blank">Messenger <span>↗</span></a>
+        <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank">WhatsApp <span>↗</span></a>
+    </div>
+</div>
+        <footer class="contact-footer">
+            <p>All Rights Reserved By <span>Martin Marcos</span></p>
+            <p>© 2026</p>
+        </footer>
+
+    </main>
+
+</div>
+
+<script>
+    function copyEmail() {
+        navigator.clipboard.writeText('tinomarcos23@gmail.com');
+        document.getElementById('btn-text').textContent = 'Email copied';
+        document.getElementById('btn-icon').textContent = '✓';
+        document.getElementById('btn-icon').style.color = '#fff';
+        setTimeout(() => {
+            document.getElementById('btn-text').textContent = 'tinomarcos23@email.com';
+            
+        }, 2000);
+    }
+</script>
+</body>
+</html>
